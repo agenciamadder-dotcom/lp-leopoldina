@@ -31,7 +31,6 @@ export function Footer() {
                     <Link href="/produtos#epoxi" className="text-gray-400 hover:text-white text-xs transition-colors link-hover">Linha Epóxi</Link>
                     <Link href="/produtos#pu" className="text-gray-400 hover:text-white text-xs transition-colors link-hover">Linha Poliuretano</Link>
                     <Link href="/produtos#neofire" className="text-gray-400 hover:text-white text-xs transition-colors link-hover">Linha Neofire</Link>
-                    <Link href="/produtos#alta-temperatura" className="text-gray-400 hover:text-white text-xs transition-colors link-hover">Alta Temperatura</Link>
                 </div>
 
                 {/* Links */}

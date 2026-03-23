@@ -42,15 +42,16 @@ export default function Home() {
 
           <h1 className="mb-6">
             <span className="hero-title-1 block text-2xl md:text-3xl lg:text-4xl font-sans font-semibold leading-snug text-white/90 tracking-tight">
-              Performance que protege.
+              Sistemas de pintura industrial com eficácia garantida
             </span>
             <span className="hero-title-2 block text-4xl md:text-6xl lg:text-7xl font-drama italic font-bold text-white leading-none mt-1">
-              Resultados que transformam.
+              Sem retrabalho. 
+Sem dor de cabeça.
             </span>
           </h1>
 
           <p className="hero-desc text-sm md:text-base text-gray-200 mb-10 max-w-xl leading-relaxed">
-            Tintas industriais de alta performance com laudos técnicos, logística própria e atendimento especializado para sua operação no Rio de Janeiro.
+            Soluções em epóxi e revestimentos industriais para pisos e estruturas diversas.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 hero-cta">
@@ -64,29 +65,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ───── TRUST / LOGOS ───── */}
-      <section className="bg-white py-10 border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-8 md:px-16">
-          <FadeIn direction="up">
-            <p className="text-center text-gray-400 text-xs font-semibold tracking-widest uppercase mb-8">
-              Grandes marcas confiam na Leopoldina Tintas
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 grayscale opacity-50 hover:opacity-80 hover:grayscale-0 transition-all duration-700">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/Coca-Cola_logo.svg.webp" alt="Coca-Cola" className="h-8 object-contain" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/logo-gerdau-512.webp" alt="Gerdau" className="h-8 object-contain" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/Logotipo_do_SBT.svg.webp" alt="SBT" className="h-8 object-contain" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/Auto_Via%C3%A7%C3%A3o_1001_Logo_old-s1280.webp" alt="1001" className="h-8 object-contain" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/logo_servicos.webp" alt="CS Brasil" className="h-8 object-contain" />
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* ───── QUEM SOMOS PREVIEW ───── */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-8 md:px-16 flex flex-col md:flex-row gap-10 items-center">
@@ -97,10 +75,12 @@ export default function Home() {
           <FadeIn delay={0.2} direction="up" className="md:w-1/2">
             <span className="text-xs font-bold tracking-widest uppercase text-brand-accent mb-3 block">Quem Somos</span>
             <h2 className="text-2xl md:text-3xl font-bold text-brand-primary mb-4 tracking-tight">
-              Tradição e tecnologia desde 1950
+              Tintas industriais que resolvem problema de verdade.
             </h2>
             <p className="text-sm text-gray-500 leading-relaxed mb-6">
-              A Leopoldina Tintas é uma fábrica de tintas industriais de alta performance localizada no Rio de Janeiro. Com décadas de experiência, atendemos grandes indústrias com produtos certificados e entrega ágil.
+              A Leopoldina Tintas entrega soluções de alto desempenho para pisos, estruturas metálicas e ambientes industriais. Cada produto é pensado para resistência, durabilidade e aplicação prática no dia a dia da obra.
+
+Atendemos construtoras, indústrias e empresas que precisam de resultado com suporte técnico direto e entrega ágil.
             </p>
             <Link href="/quem-somos" className="btn-magnetic bg-brand-primary text-white px-6 py-2.5 text-xs font-bold">
               <span>Saiba Mais <ArrowRight size={14} /></span>
@@ -115,27 +95,28 @@ export default function Home() {
           <FadeIn direction="up">
             <div className="text-center max-w-xl mx-auto mb-14">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-primary mb-3 tracking-tight">
-                Soluções feitas para quem não pode parar.
+                Soluções para quem não pode errar na obra.
               </h2>
-              <p className="text-sm text-gray-500">Qualidade intransigente aliada à agilidade que o mercado exige.</p>
+              <p className="text-sm text-gray-500">Quando a pintura falha, o prejuízo vem rápido: retrabalho, parada e custo.
+Por isso, entregamos produtos testados, suporte técnico direto e agilidade real — do pedido à aplicação.</p>
             </div>
           </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-6">
             <FadeIn delay={0.15} className="bg-white p-7 rounded-[2rem] border border-gray-100 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-2xl bg-orange-50 text-brand-accent flex items-center justify-center mb-5"><Clock size={24} /></div>
-              <h3 className="text-base font-bold text-brand-primary mb-2">Agilidade Extrema</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">Logística própria no RJ. Produzimos e entregamos no prazo que sua obra exige.</p>
+              <h3 className="text-base font-bold text-brand-primary mb-2">Entrega que acompanha sua obra</h3>
+              <p className="text-sm text-gray-500 leading-relaxed">Produção própria no RJ e logística ágil para não travar seu cronograma.</p>
             </FadeIn>
             <FadeIn delay={0.3} className="bg-white p-7 rounded-[2rem] border border-gray-100 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-5"><ShieldCheck size={24} /></div>
-              <h3 className="text-base font-bold text-brand-primary mb-2">Laudos e Certificações</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">Produtos testados e aprovados (Bombeiros, Petrobras, Vigilância Sanitária).</p>
+              <h3 className="text-base font-bold text-brand-primary mb-2">Qualidade comprovada, não prometida</h3>
+              <p className="text-sm text-gray-500 leading-relaxed">Produtos testados e aprovados por órgãos técnicos e aplicações reais em campo.</p>
             </FadeIn>
             <FadeIn delay={0.45} className="bg-white p-7 rounded-[2rem] border border-gray-100 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-5"><Factory size={24} /></div>
-              <h3 className="text-base font-bold text-brand-primary mb-2">Direto da Indústria</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">Sem intermediários. Suporte técnico de quem formula a tinta.</p>
+              <h3 className="text-base font-bold text-brand-primary mb-2">Tecnologia que acompanha a indústria</h3>
+              <p className="text-sm text-gray-500 leading-relaxed">Desenvolvemos e aprimoramos constantemente nossos produtos para atender às novas exigências do mercado.</p>
             </FadeIn>
           </div>
         </div>
@@ -158,11 +139,11 @@ export default function Home() {
             <FadeIn delay={0.15} className="group cursor-pointer">
               <div className="bg-gray-50 rounded-[2rem] p-6 mb-5 aspect-square flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <Image src="/Produtos/Balde 18Litros.webp" alt="Tinta Epóxi" width={200} height={200} className="object-contain group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/Produtos/Balde 18Litros.png" alt="Tinta Epóxi" width={150} height={150} className="object-contain group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-lg font-bold text-brand-primary mb-2">Tinta Epóxi (Neopoxi)</h3>
               <ul className="mb-4 space-y-1.5">
-                <li className="flex items-start gap-2 text-gray-500 text-sm"><CheckCircle2 size={14} className="text-brand-accent mt-0.5 shrink-0" />Resistência extrema para tráfego pesado</li>
+                <li className="flex items-start gap-2 text-gray-500 text-sm"><CheckCircle2 size={14} className="text-brand-accent mt-0.5 shrink-0" />Alta resistência para tráfego pesado</li>
                 <li className="flex items-start gap-2 text-gray-500 text-sm"><CheckCircle2 size={14} className="text-brand-accent mt-0.5 shrink-0" />Alta resistência química</li>
               </ul>
               <Link href="/produtos#epoxi" className="inline-flex items-center gap-1.5 text-brand-primary text-sm font-semibold group-hover:text-brand-accent transition-colors">Saiba Mais <ArrowRight size={14} /></Link>
@@ -172,7 +153,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <Image src="/Produtos/Galão-3-6L.webp" alt="Poliuretano" width={180} height={180} className="object-contain group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-lg font-bold text-brand-primary mb-2">Poliuretano (Neothane)</h3>
+              <h3 className="text-lg font-bold text-brand-primary mb-2">Tinta Poliuretano (Neothane)</h3>
               <ul className="mb-4 space-y-1.5">
                 <li className="flex items-start gap-2 text-gray-500 text-sm"><CheckCircle2 size={14} className="text-brand-accent mt-0.5 shrink-0" />Máxima proteção contra sol e chuva</li>
                 <li className="flex items-start gap-2 text-gray-500 text-sm"><CheckCircle2 size={14} className="text-brand-accent mt-0.5 shrink-0" />Ideal para áreas externas</li>
@@ -182,12 +163,12 @@ export default function Home() {
             <FadeIn delay={0.45} className="group cursor-pointer">
               <div className="bg-gray-50 rounded-[2rem] p-6 mb-5 aspect-square flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <Image src="/Produtos/Lata-pequena-900ml.webp" alt="Antichamas" width={150} height={150} className="object-contain group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/Produtos/neofire.png" alt="Antichamas" width={200} height={200} className="object-contain group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <h3 className="text-lg font-bold text-brand-primary mb-2">Antichamas (Neofire)</h3>
+              <h3 className="text-lg font-bold text-brand-primary mb-2">Tinta Antichamas (Neofire)</h3>
               <ul className="mb-4 space-y-1.5">
                 <li className="flex items-start gap-2 text-gray-500 text-sm"><CheckCircle2 size={14} className="text-brand-accent mt-0.5 shrink-0" />Proteção passiva contra fogo</li>
-                <li className="flex items-start gap-2 text-gray-500 text-sm"><CheckCircle2 size={14} className="text-brand-accent mt-0.5 shrink-0" />Certificação técnica (Laudos)</li>
+                <li className="flex items-start gap-2 text-gray-500 text-sm"><CheckCircle2 size={14} className="text-brand-accent mt-0.5 shrink-0" />Certificação técnica</li>
               </ul>
               <Link href="/produtos#neofire" className="inline-flex items-center gap-1.5 text-brand-primary text-sm font-semibold group-hover:text-brand-accent transition-colors">Saiba Mais <ArrowRight size={14} /></Link>
             </FadeIn>

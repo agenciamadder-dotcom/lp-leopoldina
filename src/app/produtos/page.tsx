@@ -5,12 +5,11 @@ import Image from "next/image";
 
 export default function Produtos() {
     const categorias = [
-        { id: "epoxi", titulo: "Linha Epóxi (Neopoxi)", descricao: "Alta resistência mecânica, química e durabilidade. Ideal para pisos industriais e ambientes agressivos.", produtos: "Primer Epóxi Anticorrosivo, Tintas para Piso (Brilhante/Semibrilho), Autonivelante, Porcelanato Líquido.", imagem: "/Produtos/Balde 18Litros.webp", cor: "bg-blue-50" },
-        { id: "pu", titulo: "Linha Poliuretano (Neothane)", descricao: "Resistência a intempéries (sol/chuva) e retenção de cor/brilho. Ideal para demarcações externas.", produtos: "Acabamentos PU (Brilhante/Acetinado), PU Antipichação, Verniz Incolor.", imagem: "/Produtos/Galão-3-6L.webp", cor: "bg-orange-50" },
-        { id: "neofire", titulo: "Linha Neofire (Antichamas)", descricao: "Tinta retardadora de chamas (Intumescente). Proteção passiva contra incêndio com emissão de laudo.", produtos: "Consulte especificações técnicas.", imagem: "/Produtos/Lata-pequena-900ml.webp", cor: "bg-red-50" },
-        { id: "petrobras", titulo: "Normas Petrobras", descricao: "Tintas fabricadas sob rigorosos padrões da norma Petrobras (industrial e offshore).", produtos: "Normas: N-1195, N-1202, N-2677, N-2680, entre outras.", imagem: "/Produtos/Galão de5L.webp", cor: "bg-emerald-50" },
-        { id: "alta-temperatura", titulo: "Linha Neotherm (Alta Temperatura)", descricao: "Tintas que suportam de 200°C a 600°C. Ideais para chaminés, fornos e caldeiras.", produtos: "Tinta PU e Acrílica para alta temperatura.", imagem: "/Produtos/tambor-200litros.webp", cor: "bg-slate-50" },
-        { id: "complementos", titulo: "Diluentes e Catalisadores", descricao: "Complementos essenciais para cura e aplicação perfeita de cada sistema bicomponente.", produtos: "Thinner, Diluente PU, Catalisador Epóxi, Massa Plástica Industrial.", imagem: "/Produtos/Galão de5L.webp", cor: "bg-indigo-50" },
+        { id: "epoxi", titulo: "Linha Epóxi (Neopoxi)", descricao: "Alta resistência mecânica, química e durabilidade. Ideal para pisos industriais e ambientes agressivos.", produtos: "Primer Epóxi Anticorrosivo, Tintas para Piso (Brilhante/Semibrilho), Autonivelante, Porcelanato Líquido.", imagem: "/Produtos/neofire.png", cor: "bg-blue-50" },
+        { id: "pu", titulo: "Linha Tinta Poliuretano (Neothane)", descricao: "Resistência a intempéries (sol/chuva) e retenção de cor/brilho. Ideal para demarcações externas.", produtos: "Acabamentos PU (Brilhante/Acetinado), PU Antipichação, Verniz Incolor.", imagem: "/Produtos/Galão-3-6L.webp", cor: "bg-orange-50" },
+        { id: "neofire", titulo: "Linha Neofire (Antichamas)", descricao: "Tinta retardadora de chamas (Intumescente). Proteção passiva contra incêndio com emissão de laudo.", produtos: "Consulte especificações técnicas.", imagem: "/Produtos/neofire.png", cor: "bg-red-50" },
+        { id: "petrobras", titulo: "Normas Petrobras", descricao: "Tintas fabricadas sob rigorosos padrões da norma Petrobras (industrial e offshore).", produtos: "Normas: N-1195, N-1202, N-2677, N-2680, entre outras.", imagem: "/Produtos/1631338308976.jpeg", cor: "bg-emerald-50" },
+        { id: "complementos", titulo: "Diluentes", descricao: "Complementos essenciais para a aplicação perfeita de cada sistema.", produtos: "Diluente para Epóxi, Diluente para Limpeza.", imagem: "/Produtos/diluentes.png", cor: "bg-indigo-50" },
     ];
 
     return (
@@ -19,8 +18,8 @@ export default function Produtos() {
             <section className="bg-brand-primary text-white py-32 px-8">
                 <div className="max-w-6xl mx-auto md:px-16 text-center">
                     <FadeIn direction="up">
-                        <h1 className="text-3xl md:text-4xl font-bold mb-3">Linha Empresarial</h1>
-                        <p className="text-sm text-gray-300 max-w-lg mx-auto">Conheça nossa linha completa de revestimentos de alta performance.</p>
+                        <h1 className="text-3xl md:text-4xl font-bold mb-3">Linha Industrial</h1>
+                        <p className="text-sm text-gray-300 max-w-lg mx-auto">Conheça nossa linha completa de revestimentos de alto desempenho.</p>
                     </FadeIn>
                 </div>
             </section>
@@ -66,7 +65,7 @@ export default function Produtos() {
                         <h2 className="text-2xl font-bold text-brand-dark mb-3">Não encontrou o que precisa?</h2>
                         <p className="text-brand-dark/70 text-sm mb-6 max-w-lg mx-auto">Desenvolvemos produtos sob medida para as necessidades da sua planta industrial.</p>
                         <Link href="/#orcamento" className="btn-magnetic bg-brand-dark text-white px-8 py-3 text-sm">
-                            <span>Falar com Engenharia <ArrowRight size={16} /></span>
+                            <span>Falar com Consultor Técnico <ArrowRight size={16} /></span>
                         </Link>
                     </div>
                 </FadeIn>

@@ -6,20 +6,20 @@ export default function Cores() {
     interface ColorProps { nome: string; hex: string; codigo: string; textColor?: string; }
 
     const munsellColors: ColorProps[] = [
-        { nome: "Vermelho Segurança", hex: "#E32636", codigo: "5R 4/14" },
-        { nome: "Amarelo Petrobras", hex: "#FFD700", codigo: "2.5 Y 8/12", textColor: "text-gray-800" },
-        { nome: "Verde Segurança", hex: "#008000", codigo: "10 GY 6/6" },
-        { nome: "Azul Segurança", hex: "#005A9C", codigo: "2.5 PB 4/10" },
-        { nome: "Cinza Claro", hex: "#B0C4DE", codigo: "N 8", textColor: "text-gray-800" },
-        { nome: "Cinza Escuro", hex: "#696969", codigo: "N 3.5" },
+        { nome: "Vermelho Segurança", hex: "#B22234", codigo: "5R 4/14" },
+        { nome: "Amarelo Segurança", hex: "#ECC000", codigo: "5 Y 8/12", textColor: "text-gray-800" },
+        { nome: "Verde Segurança", hex: "#75A266", codigo: "10 GY 6/6" },
+        { nome: "Azul Segurança", hex: "#006CA2", codigo: "2.5 PB 4/10" },
+        { nome: "Cinza Claro", hex: "#A5A69D", codigo: "N 6.5", textColor: "text-gray-800" },
+        { nome: "Cinza Escuro", hex: "#595959", codigo: "N 3.5" },
     ];
 
     const ralColors: ColorProps[] = [
         { nome: "Signal Yellow", hex: "#F9A800", codigo: "RAL 1003", textColor: "text-gray-800" },
-        { nome: "Flame Red", hex: "#AF2B1E", codigo: "RAL 3000" },
-        { nome: "Traffic Blue", hex: "#005A8C", codigo: "RAL 5017" },
-        { nome: "Light Grey", hex: "#D3D3D3", codigo: "RAL 7035", textColor: "text-gray-800" },
-        { nome: "Jet Black", hex: "#0A0A0A", codigo: "RAL 9005" },
+        { nome: "Flame Red", hex: "#AB2524", codigo: "RAL 3000" },
+        { nome: "Traffic Blue", hex: "#0E518D", codigo: "RAL 5017" },
+        { nome: "Light Grey", hex: "#CBD0CC", codigo: "RAL 7035", textColor: "text-gray-800" },
+        { nome: "Jet Black", hex: "#0A0A0D", codigo: "RAL 9005" },
     ];
 
     const ColorCard = ({ cor, padrao }: { cor: ColorProps; padrao: "Munsell" | "RAL" }) => (

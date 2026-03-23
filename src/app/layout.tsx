@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { InlineEditor } from "@/components/dev/InlineEditor";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], style: ["normal", "italic"], variable: "--font-playfair" });
@@ -36,6 +37,7 @@ export default function RootLayout({
           {children}
         </main>
         <WhatsAppButton />
+        {process.env.NODE_ENV === 'development' && <InlineEditor />}
         <Footer />
       </body>
     </html>
