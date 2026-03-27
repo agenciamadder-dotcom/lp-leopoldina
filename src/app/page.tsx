@@ -163,7 +163,7 @@ Por isso, entregamos produtos testados, suporte técnico direto e agilidade real
             <FadeIn delay={0.45} className="group cursor-pointer">
               <div className="bg-gray-50 rounded-[2rem] p-6 mb-5 aspect-square flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <Image src="/Produtos/neofire.png" alt="Antichamas" width={200} height={200} className="object-contain group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/Produtos/neofire2.webp" alt="Antichamas" width={200} height={200} className="object-contain group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-lg font-bold text-brand-primary mb-2">Tinta Antichamas (Neofire)</h3>
               <ul className="mb-4 space-y-1.5">

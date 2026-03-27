@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Produtos() {
     const categorias = [
-        { id: "epoxi", titulo: "Linha Epóxi (Neopoxi)", descricao: "Alta resistência mecânica, química e durabilidade. Ideal para pisos industriais e ambientes agressivos.", produtos: "Primer Epóxi Anticorrosivo, Tintas para Piso (Brilhante/Semibrilho), Autonivelante, Porcelanato Líquido.", imagem: "/Produtos/neofire.png", cor: "bg-blue-50" },
+        { id: "epoxi", titulo: "Linha Epóxi (Neopoxi)", descricao: "Alta resistência mecânica, química e durabilidade. Ideal para pisos industriais e ambientes agressivos.", produtos: "Primer Epóxi Anticorrosivo, Tintas para Piso (Brilhante/Semibrilho), Autonivelante, Porcelanato Líquido.", imagem: "/Produtos/neofire2.webp", cor: "bg-blue-50" },
         { id: "pu", titulo: "Linha Tinta Poliuretano (Neothane)", descricao: "Resistência a intempéries (sol/chuva) e retenção de cor/brilho. Ideal para demarcações externas.", produtos: "Acabamentos PU (Brilhante/Acetinado), PU Antipichação, Verniz Incolor.", imagem: "/Produtos/Galão-3-6L.webp", cor: "bg-orange-50" },
-        { id: "neofire", titulo: "Linha Neofire (Antichamas)", descricao: "Tinta retardadora de chamas (Intumescente). Proteção passiva contra incêndio com emissão de laudo.", produtos: "Consulte especificações técnicas.", imagem: "/Produtos/neofire.png", cor: "bg-red-50" },
+        { id: "neofire", titulo: "Linha Neofire (Antichamas)", descricao: "Tinta retardadora de chamas (Intumescente). Proteção passiva contra incêndio com emissão de laudo.", produtos: "Consulte especificações técnicas.", imagem: "/Produtos/neofire2.webp", cor: "bg-red-50" },
         { id: "petrobras", titulo: "Normas Petrobras", descricao: "Tintas fabricadas sob rigorosos padrões da norma Petrobras (industrial e offshore).", produtos: "Normas: N-1195, N-1202, N-2677, N-2680, entre outras.", imagem: "/Produtos/1631338308976.jpeg", cor: "bg-emerald-50" },
         { id: "complementos", titulo: "Diluentes", descricao: "Complementos essenciais para a aplicação perfeita de cada sistema.", produtos: "Diluente para Epóxi, Diluente para Limpeza.", imagem: "/Produtos/diluentes.png", cor: "bg-indigo-50" },
     ];

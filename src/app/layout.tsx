@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
-import { InlineEditor } from "@/components/dev/InlineEditor";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], style: ["normal", "italic"], variable: "--font-playfair" });
@@ -21,7 +21,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
+      <head>
+        <Script id="google-tag-manager" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T78Z5NS3');
+          `
+        }} />
+      </head>
       <body suppressHydrationWarning={true} className={`${inter.variable} ${playfair.variable} text-brand-dark min-h-screen flex flex-col font-sans relative`}>
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-T78Z5NS3"
+            height="0" 
+            width="0" 
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         {/* Global Noise Overlay */}
         <div className="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.05]">
           <svg className="absolute inset-0 h-full w-full">
@@ -37,7 +56,6 @@ export default function RootLayout({
           {children}
         </main>
         <WhatsAppButton />
-        {process.env.NODE_ENV === 'development' && <InlineEditor />}
         <Footer />
       </body>
     </html>
