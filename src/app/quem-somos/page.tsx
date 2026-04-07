@@ -1,5 +1,5 @@
 import { FadeIn } from "@/components/ui/FadeIn";
-import { ArrowRight, Users, Factory, Shield, FlaskConical, Flame, Droplets, FileCheck, Microscope, Headset } from "lucide-react";
+import { ArrowRight, Factory, Shield, FlaskConical, Flame, Droplets, FileCheck, Microscope, Headset } from "lucide-react";
 import Link from "next/link";
 
 export default function QuemSomos() {

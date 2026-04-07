@@ -31,6 +31,12 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-T78Z5NS3');
           `
         }} />
+        {/* GHL External Tracking */}
+        <Script
+          src="https://api.apper.com.br/js/external-tracking.js"
+          data-tracking-id="tk_af490571a7d0435e9a08b2f4f64a5485"
+          strategy="afterInteractive"
+        />
       </head>
       <body suppressHydrationWarning={true} className={`${inter.variable} ${playfair.variable} text-brand-dark min-h-screen flex flex-col font-sans relative`}>
         <noscript>

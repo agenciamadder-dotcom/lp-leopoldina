@@ -1,6 +1,7 @@
 "use client";
 
 import { FadeIn } from "@/components/ui/FadeIn";
+import { NativeForm } from "@/components/ui/NativeForm";
 import { ArrowRight, Clock, ShieldCheck, Factory, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -180,44 +181,62 @@ Por isso, entregamos produtos testados, suporte técnico direto e agilidade real
         </div>
       </section>
 
-      {/* ───── CTA FINAL (FORMULÁRIO APPER) ───── */}
-      <section id="orcamento" className="py-20 bg-brand-primary relative">
-        <div className="max-w-6xl mx-auto px-8 md:px-16 relative z-10 mb-20">
+      {/* ───── CTA FINAL (FORMULÁRIO NATIVO — GHL Tracked) ───── */}
+      <section id="orcamento" className="py-24 bg-brand-primary relative overflow-hidden">
+        {/* Textura de fundo — grid sutil */}
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,184,0,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(255,184,0,0.8) 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
+        />
+
+        <div className="max-w-6xl mx-auto px-8 md:px-16 relative z-10">
+          {/* Label de seção */}
           <FadeIn direction="up">
-            <div className="bg-white text-brand-dark overflow-hidden flex flex-col md:flex-row shadow-2xl">
-              <div className="p-8 md:p-12 md:w-1/2 bg-brand-primary text-white flex flex-col justify-center">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">Fale agora com o nosso time!</h2>
-                <p className="text-white/70 text-sm mb-8 leading-relaxed">
-                  Preencha os dados da sua obra e um de nossos especialistas entrará em contato em minutos.
+            <span className="block text-[10px] font-bold tracking-[0.2em] uppercase text-brand-accent mb-10 text-center md:text-left">
+              Solicitar Cotação Técnica
+            </span>
+          </FadeIn>
+
+          <FadeIn direction="up">
+            <div className="relative flex flex-col md:flex-row gap-0">
+              {/* Divisor vertical — somente desktop */}
+              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-brand-accent/20 z-10" />
+
+              {/* ─── Lado esquerdo: copy ─── */}
+              <div className="md:w-1/2 md:pr-16 pb-12 md:pb-0 flex flex-col justify-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">
+                  Fale agora com<br />
+                  <span className="text-brand-accent italic font-drama">o nosso time.</span>
+                </h2>
+                <p className="text-white/50 text-sm mb-10 leading-relaxed max-w-sm">
+                  Preencha os dados da sua obra e um especialista entrará em contato em minutos.
                 </p>
-                <div className="space-y-3 text-sm text-white/80">
-                  {["Atendimento especializado B2B", "Preços direto da fábrica", "Entrega rápida no RJ"].map((item) => (
-                    <div key={item} className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-                        <CheckCircle2 size={16} className="text-brand-accent" />
+                <div className="space-y-4">
+                  {[
+                    { label: "Atendimento especializado B2B", sub: "Direto com o técnico responsável" },
+                    { label: "Preços direto da fábrica", sub: "Sem intermediários, sem markup" },
+                    { label: "Entrega rápida no RJ", sub: "Logística própria e ágil" },
+                  ].map((item) => (
+                    <div key={item.label} className="flex items-start gap-4">
+                      <div className="w-8 h-8 rounded-lg bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <CheckCircle2 size={15} className="text-brand-accent" />
                       </div>
-                      <p>{item}</p>
+                      <div>
+                        <p className="text-white text-sm font-semibold leading-none mb-1">{item.label}</p>
+                        <p className="text-white/40 text-xs">{item.sub}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="p-0 md:w-1/2 flex items-stretch">
-                <iframe
-                  src="https://api.apper.com.br/widget/form/WrTPqpJZ8QcNPCYKUKrh"
-                  style={{ width: "100%", height: "650px", border: "none", overflow: "hidden" }}
-                  scrolling="no"
-                  id="popup-WrTPqpJZ8QcNPCYKUKrh"
-                  data-layout='{"id":"POPUP"}'
-                  data-trigger-type="alwaysShow"
-                  data-activation-type="alwaysActivated"
-                  data-deactivation-type="neverDeactivate"
-                  data-form-name="📥 Form: LP Principal B2B"
-                  data-height="650"
-                  data-layout-iframe-id="popup-WrTPqpJZ8QcNPCYKUKrh"
-                  data-form-id="WrTPqpJZ8QcNPCYKUKrh"
-                  title="📥 Form: LP Principal B2B"
-                />
+              {/* ─── Lado direito: formulário ─── */}
+              <div className="md:w-1/2 md:pl-16 flex items-start">
+                <NativeForm />
               </div>
             </div>
           </FadeIn>
